@@ -5,6 +5,11 @@
     height: 100px;
 
 }
+img{
+
+    padding: 5px;
+    
+}
 #navExtra:hover {
     color:grey;
 }
