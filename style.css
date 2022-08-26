@@ -1,0 +1,125 @@
+#NavBar{
+    /* Tab Bg */
+
+    width: 100%;
+    height: 100px;
+
+}
+#navExtra:hover {
+    color:grey;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#navExtra{
+    /* Home */
+    transition: 0.3s;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #ffffff;
+
+    position: absolute;
+    width: 33%;
+    height: 89px;
+    left: 66.666%;
+    top: 11px;
+
+    background: url("https://thumbs.gfycat.com/AbandonedSoupyKagu-max-1mb.gif") 50% 70%;
+
+    border-radius: 20px;
+
+    box-shadow: -7px 7px rgba(132, 127, 127, 0.25);
+}
+
+#navAboutMe:hover {
+    color:grey;
+}
+#navAboutMe{
+    /* Home */
+    transition: 0.3s;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #ffffff;
+
+    position: absolute;
+    width: 33%;
+    height: 89px;
+    left: 33%;
+    top: 11px;
+
+    background: url("https://thumbs.gfycat.com/AbandonedSoupyKagu-max-1mb.gif") -30% 50%;
+
+    border-radius: 20px;
+
+    box-shadow: -7px 7px rgba(132, 127, 127, 0.25);
+}
+
+#navMyWork:hover {
+    color: grey;
+}
+
+#navMyWork{
+    /* Home */
+    transition: 0.3s;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #ffffff;
+
+    position: absolute;
+    width: 33%;
+    height: 89px;
+    top: 11px;
+    left: -.5%;
+
+    background: url("https://thumbs.gfycat.com/AbandonedSoupyKagu-max-1mb.gif") -30% 10%;
+
+    border-radius: 20px;
+
+    box-shadow: -7px 7px rgba(132, 127, 127, 0.25);
+}
+
+
+#levelSlots{
+    /* levelSlots */
+    padding-top: 150px;
+    color:#FFFFFF;
+    width: 70%;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+#title{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+
+    font-size: 90px;
+    color: white;
+    padding-top: 150px;
+    text-align: center;
+
+    animation: fadein 2s;
+}
