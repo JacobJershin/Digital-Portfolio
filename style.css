@@ -19,6 +19,11 @@ img{
     to   { opacity: 1; }
 }
 
+#anime_girl {
+    background: url("https://c.tenor.com/oOrsGFrf-6wAAAAM/dance-dance-moves.gif");
+    bottom: 0%;
+    right: 0%;
+}
 
 #navExtra{
     /* Home */
