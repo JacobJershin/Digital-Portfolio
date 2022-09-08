@@ -1,7 +1,8 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
 <!DOCTYPE html>
 <html lang="en"><head>
 
-    <meta charset="UTF-8">
+    <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../style.css">
@@ -28,14 +29,13 @@
       Optimal Sort 
     </div>
 
-    <div id="array" style="color: white;"> Error </div>
     <div id="levelSlots">Error</div>
-
+    <img src="https://jacobjershin.github.io/CS-III/Projects/Optimal%20Sort.drawio.png">
+    
     <script>
       Array = ["bdad", "wqa", "cdsa", "asdasdawds", "ietuqow", "fewf", "vjbw"]
+      OGArray = ["bdad", "wqa", "cdsa", "asdasdawds", "ietuqow", "fewf", "vjbw"]
       Temp = []
-      
-      document.getElementById("array").innerHTML = Array;
 
       for (let i = 0; i < Array.length; i++) {
 	  for (let compare = 0; compare < Array.length; compare++) {
@@ -47,8 +47,9 @@
 	  }
       }
       
-      document.getElementById("levelSlots").innerHTML = Array;
+      document.getElementById("levelSlots").innerHTML = "This is the original array [" + OGArray + "] <br> " + "And this is the sorted array [" + Array + "]";
     </script>   
     
   </body>
+  
 </html>
