@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Digital Portfolio</title>
+  </head>
+  <body style="background: #000000" class="vsc-initialized">
+
+
+
+    <div id="NavBar" style="position: sticky; z-index: 999; opacity: .95; position: fixed;">
+      <a id="navAboutMe" href="https://codermerlin.com/users/jacob-jershin/Digital_Portfolio/AboutMe.html">About Me.</a>
+      <a id="navMyWork" href="https://codermerlin.com/users/jacob-jershin/Digital_Portfolio/MyWork.html">My Work.</a>
+      <a id="navExtra">Home.</a>
+    </div>
+
+    <style>
+      body {
+	  font-family: 'Courier New', monospace;
+	  color: 'white';
+      }
+    </style>
+
+    <div id="title">
+      Optimal Sort 
+    </div>
+
+    <div id="array" style="color: white;"> Error </div>
+    <div id="levelSlots">Error</div>
+
+    <script>
+      Array = ["bdad", "wqa", "cdsa", "asdasdawds", "ietuqow", "fewf", "vjbw"]
+      Temp = []
+      
+      document.getElementById("array").innerHTML = Array;
+
+      for (let i = 0; i < Array.length; i++) {
+	  for (let compare = 0; compare < Array.length; compare++) {
+	      if (Array[i] < Array[compare]) {
+		  Temp = Array[i]
+		  Array[i] = Array[compare]
+		  Array[compare] = Temp
+	      }
+	  }
+      }
+      
+      document.getElementById("levelSlots").innerHTML = Array;
+    </script>   
+    
+  </body>
+</html>

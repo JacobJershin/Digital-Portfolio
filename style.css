@@ -120,6 +120,15 @@ img{
     line-height: 25px;
 }
 
+#array{
+    /* levelSlots */
+    padding-top: 150px;
+    color:#FFFFFF;
+    width: 70%;
+    font-size: 17px;
+    line-height: 25px;
+}
+
 #title{
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
