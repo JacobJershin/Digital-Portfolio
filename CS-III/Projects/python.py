@@ -3,7 +3,6 @@ import js2py
 import sys
 
 Array = []
-out = ""
 
 while True: #while theres still standard input going in
     try: # it will try to add that input to the array
@@ -14,29 +13,37 @@ while True: #while theres still standard input going in
 
 #Array = ["case","farse","abba","aabb","a","fartstat"]
 
+#def sort(Array):
+#    for i in range(1, len(Array)):
+#        j = i-1
+#        Place = Array[i]
+#        while (Array[j] > Array[i]) and (j >= 0):
+#            Array[j+1] = Array[j]
+#            j=j-1
+#        Array[j+1] = Array[j]
+
 def sort(Array):
-    for i in range(1, len(Array)):
-        j = i-1
-        while (Array[j] > Array[i]) and (j >= 0):
-            Array[j+1] = Array[j]
-            j=j-1
-        
-            
+    return (quicksort([x for x in Array[1:] if x <  Array[0]])
+            + [Array[0]] +
+            quicksort([x for x in Array[1:] if x >= Array[0]]))
 
-js = '''
-function sort(Array) { 
-for (let i = 0; i < Array.length; i++) {
-for (let compare = 0; compare < Array.length; compare++) {
-if (Array[i] < Array[compare]) {
-Temp = Array[i]
-Array[i] = Array[compare]
-Array[compare] = Temp
-}
-}
-}
-return (Array)
-}
-'''
-res = js2py.eval_js(js)
+print(sort(Array))        
 
-print(res(Array))
+
+#js = '''
+#function sort(Array) { 
+#for (let i = 0; i < Array.length; i++) {
+#for (let compare = 0; compare < Array.length; compare++) {
+#if (Array[i] < Array[compare]) {
+#Temp = Array[i]
+#Array[i] = Array[compare]
+#Array[compare] = Temp
+#}
+#}
+#}
+#return (Array)
+#}
+#'''
+#res = js2py.eval_js(js)
+
+#print(res(Array))
