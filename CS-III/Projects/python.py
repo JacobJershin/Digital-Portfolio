@@ -9,9 +9,9 @@ while True: #while theres still standard input going in
 
 Temp = []
 while Array:
-    smallest = min(Array)
-    Temp.append(smallest)
-    Array.pop(Array.index(smallest))
+    smallest = min(Array) #finds the "smallest" word
+    Temp.append(smallest) #puts it in the temp array
+    Array.pop(Array.index(smallest)) #goes to the next index in the original array
 
 print(Temp)
     
