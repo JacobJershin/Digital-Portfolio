@@ -1,47 +1,24 @@
-#include <bits/stdc++.h>
+#include <limits.h>
+#include <stdio.h>
+#include <iostream>
 
-using namespace std;
- 
+void sort(std::string arr[], int N)
+{
+  int i;
+  int min = ;
+  for (i = 0; i < N; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  printf("The element is %d", min);
+  return;
+}
+
 int main()
 {
-
-    // Get the array
-
-    int arr[] = { 1, 45, 54, 71, 76, 12 };
- 
-
-    // Compute the sizes
-
-    int n = sizeof(arr) / sizeof(arr[0]);
- 
-
-    // Print the array
-
-    cout << "Array: ";
-
-    for (int i = 0; i < n; i++)
-
-        cout << arr[i] << " ";
- 
-
-    // Find the minimum element
-
-    cout << "\nMin Element = "
-
-         << *min_element(arr, arr + n);
- 
-
-    // Find the maximum element
-
-    int &min = *min_element(arr,arr+n );
-
-    int &max = *max_element(arr,arr+n );
-
-    cout<<"\nFinding the Element using address variable";
-
-    cout<<"\nMin Element = "<<min;
-
-    cout<<"\nMax Element = "<<max;
-
-    return 0;
+  std::string arr[] = { "a", "b" };
+  int N = sizeof(arr) / sizeof(arr[0]);
+  sort(arr, N);
+  return 0;
 }
