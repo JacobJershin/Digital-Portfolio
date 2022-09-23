@@ -1,0 +1,355 @@
+#NavBar{
+    /* Tab Bg */
+
+    width: 100%;
+    height: 100px;
+
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+#navExtra:hover {
+    color:grey;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ 
+#navExtra{
+    /* Home */
+    transition: 0.3s;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #ffffff;
+
+    position: absolute;
+    width: 33%;
+    height: 89px;
+    left: 66.666%;
+    top: 11px;
+
+    background: url("https://thumbs.gfycat.com/AbandonedSoupyKagu-max-1mb.gif") 50% 70%;
+
+    border-radius: 20px;
+
+    box-shadow: -7px 7px rgba(132, 127, 127, 0.25);
+}
+
+#navAboutMe:hover {
+    color:grey;
+}
+#navAboutMe{
+    /* Home */
+    transition: 0.3s;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #ffffff;
+
+    position: absolute;
+    width: 33%;
+    height: 89px;
+    left: 33%;
+    top: 11px;
+
+    background: url("https://thumbs.gfycat.com/AbandonedSoupyKagu-max-1mb.gif") -30% 50%;
+
+    border-radius: 20px;
+
+    box-shadow: -7px 7px rgba(132, 127, 127, 0.25);
+}
+
+#navMyWork:hover {
+    color: grey;
+}
+
+#navMyWork{
+    /* Home */
+    transition: 0.3s;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #ffffff;
+
+    position: absolute;
+    width: 33%;
+    height: 89px;
+    top: 11px;
+    left: -.5%;
+
+    background: url("https://thumbs.gfycat.com/AbandonedSoupyKagu-max-1mb.gif") -30% 10%;
+
+    border-radius: 20px;
+
+    box-shadow: -7px 7px rgba(132, 127, 127, 0.25);
+}
+
+/* uses Google Docs default css */
+
+.flowchart {
+    position:absolute;
+    right:10px;
+    top:500px;
+    width: calc(100% - 800px);
+    height: 100%;
+    overflow: auto;
+}
+a {
+    color: #64a19d;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover {
+    color: #50817e;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		 Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		 "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #64a19d;
+    border-color: #64a19d;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+table td,
+table th {
+    padding: 0;
+}
+.c8 {
+    margin-left: 36pt;
+    padding-top: 12pt;
+    text-indent: -36pt;
+    padding-bottom: 12pt;
+    line-height: 2;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+.c2 {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+    font-style: normal;
+}
+.c0 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+    font-style: normal;
+}
+.c7 {
+    padding-top: 108pt;
+    padding-bottom: 0pt;
+    line-height: 2;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+.c3 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 2;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+.c5 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 2;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+.c12 {
+    color: #000000;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+}
+.c11 {
+    background-color: #ffffff;
+    max-width: 468pt;
+    padding: 72pt 72pt 72pt 72pt;
+}
+.c10 {
+    page-break-after: avoid;
+}
+.c9 {
+    text-indent: 36pt;
+}
+.c1 {
+    font-style: italic;
+}
+.c4 {
+    font-weight: 400;
+}
+.c6 {
+    height: 12pt;
+}
+.title {
+    padding-top: 108pt;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+.subtitle {
+    padding-top: 0pt;
+    color: #000000;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+li {
+    color: #000000;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+}
+p {
+    margin: 0;
+    color: #000000;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+}
+h1 {
+    padding-top: 0pt;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+h2 {
+    padding-top: 0pt;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+h3 {
+    padding-top: 0pt;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+h4 {
+    padding-top: 0pt;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+h5 {
+    padding-top: 0pt;
+    color: #000000;
+    font-size: 12pt;
+    padding-bottom: 0pt;
+    font-family: "Times New Roman";
+    line-height: 2;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+h6 {
+    padding-top: 8pt;
+    color: #666666;
+    font-size: 11pt;
+    padding-bottom: 0pt;
+    font-family: "Trebuchet MS";
+    line-height: 2;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
