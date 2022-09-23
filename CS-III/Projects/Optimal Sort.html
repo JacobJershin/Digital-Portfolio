@@ -30,27 +30,13 @@
       Optimal Sort 
     </div>
 
-    <div id="levelSlots">Error</div>
+    <div id="levelSlots">
+      <p>This is mine and Zach Allens optimal sort program. Our first idea was pretty slow and pretty garbage. to make it simple what we did was compare each element to another and then stored the results from smallest to greatest in an array then print the array index by index. its pretty slow and was really inifitent. If you're intrested in our flow chart you can see here its just 2 for loops iterating over and over and over again, of course it was really slow. our average time for only 250 words was around 1.75 seconds, not only that but as more words would be added it would get expoentially slower.</p> 
     <img src="https://jacobjershin.github.io/CS-III/Projects/Optimal%20Sort.drawio.png">
-    
-    <script>
-      Array = ["bdad", "wqa", "cdsa", "asdasdawds", "ietuqow", "fewf", "vjbw"]
-      OGArray = ["bdad", "wqa", "cdsa", "asdasdawds", "ietuqow", "fewf", "vjbw"]
-      Temp = []
+      <p>After some more research and brain storming we came up with another idea, this time we would utlize the min method in python to find the min element in an array. Then we would put that min element in a second array and pop the element from the original array. It was a lot faster and worked a lot better, for the same sample of 250 random words, our time was around 0.016 for referance the built in sort is around 0.011 for the same sample size. We also did tests on 2500 words which gave us a very consistent time of 0.105. Heres our flow chart for that method.</p>
+      <img src="">
 
-      for (let i = 0; i < Array.length; i++) {
-	  for (let compare = 0; compare < Array.length; compare++) {
-	      if (Array[i] < Array[compare]) {
-		  Temp = Array[i]
-		  Array[i] = Array[compare]
-		  Array[compare] = Temp
-	      }
-	  }
-      }
-      
-      document.getElementById("levelSlots").innerHTML = "This is the original array [" + OGArray + "] <br> " + "And this is the sorted array [" + Array + "]";
-    </script>   
-    
+    </div>
   </body>
   
 </html>
