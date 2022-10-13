@@ -32,13 +32,13 @@
 
     <div id="levelSlots">
       <p>This is mine and Zach Allens optimal sort program. Our first idea was pretty slow and pretty garbage. to make it simple what we did was compare each element to another and then stored the results from smallest to greatest in an array then print the array index by index. its pretty slow and was really inifitent. If you're intrested in our flow chart you can see here its just 2 for loops iterating over and over and over again, of course it was really slow. our average time for only 250 words was around 1.75 seconds, not only that but as more words would be added it would get expoentially slower.</p> 
-    <img src="https://jacobjershin.github.io/CS-III/Projects/Optimal%20Sort.drawio.png">
+      <img src="https://jacobjershin.github.io/CS-III/Projects/Optimal%20Sort.drawio.png">
       <p>After some more research and brain storming we came up with another idea, this time we would utlize the min method in python to find the min element in an array. Then we would put that min element in a second array and pop the element from the original array. It was a lot faster and worked a lot better, for the same sample of 250 random words, our time was around 0.016 for referance the built in sort is around 0.011 for the same sample size. We also did tests on 2500 words which gave us a very consistent time of 0.105. Heres our flow chart for that method.</p>
       <img src="https://codermerlin.com/users/jacob-jershin/Digital%20Portfolio/CS-III/Projects/Untitled%20Diagram.drawio.png">
-
       <p>After even more research we came accross an algorithm known as "quick sort" which was pretty tricky to understand as it invloves splits, and flips, recursion and all sorts of stuff. After a little time wracking our brains we figiured out how it works. To put it simply we slipt the input array along the first element. then after we compare each element to see if its bigger or smaller then the first element, then we move it to its according side of the array around that first element. then we repeat this process until no more changes need to be made. This algorithm is very fast, for the 250 word sample we averaged around 0.018 which unforunetly slower then our last method but for the 2500 word test we averaged 0.030 which is significantly faster. For comparason the built in sort averages 0.022 which means we're only 0.008 seconds off. Heres the flow chart for this.</p>
-
-     <img src=" Untitled Diagram.drawio (1).png
+      <img src="https://codermerlin.com/users/jacob-jershin/Digital%20Portfolio/CS-III/Projects/Untitled Diagram.drawio (1).png">
+      <p> What was most suprising to me was the fact that adding more lines and more code actually made the program faster, I would have thought making the shortest code with the least ammount of steps to execute would be faster but to find out that wasnt the case truely perplexed me. It turns out this is because in order to have the fastests program you need to sort the mathimatically most % of your data per step. the reason quick sort was so much faster then our other methods was because our min() .pop method had to do 2500 steps in total, while quick sort on avaerage does much less, how much less is dependent on the sample but it on average only has to do 350 steps beacuse of how much it sorts at once. 
+      
     </div>
   </body>
   
