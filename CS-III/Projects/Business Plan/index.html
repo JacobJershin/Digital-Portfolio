@@ -24,8 +24,15 @@
     </div>
 
     <div id="levelSlots">
-      3d Ray-tracing shader for a simple "game"
-      Physics Simulator 
+      Current rendering in 3d games is slow and hardware hungry, most 3d games take hundreds of dollars of equipment to run. My ISPs goal is to provide a cheaper, more efficient, and faster solution for lower end devices such as mobile phones and laptops to run 3d games at 20 or even 30 frames per second while still looking clean and sharp by using my own rendering algorithm that traces a vector from each poly vertex to the camera and distance vectors from each polys vertex to the light sources, this way we can calculate things such as a dimness gradient of the RGB values of the poly and in which order to render them in. In essence this project's end goal will allow things like tinted glass, smooth lighting, and other RGB manipulators to be rendered quickly and efficiently with only a few calculations per poly. 
+    </div>
+
+    <div id="levelSlots" style="margin-top:-100px">
+      The algorithm works as such. First make a rectangle n number of units away from the camera, this will be our rasterizing screen and that will calculate the RGBA values of each pixel. This rectangle will length n*tan(theta) and width n*tan(phi) where theta is the angle in the “y” with respect to the camera and phi is the angle in the “x” with respect to the camera. This way we can rotate, invert, move, and even by changing the value of n zoom in and out with our camera. Next, it traces vectors from the light sources to the vertices of the polys. It stores the magnitude of each vector per poly and then makes a shading gradient of the vector magnitudes to the light source. This way we can include things such as smooth lighting to our environment using only 1 calculation per object. Next we need to trace our vectors from the camera to each polys vertices. We store extra things in these vectors such as color and alpha. Lastly we calculate where these vectors intersect with the screen we made in our first step and then rasterize their data on the screen. 
+    </div>
+    <div id="levelSlots" style="margin-top:-100px">
+	The many reasons why this is much faster then already existing algorithms are as follows, the calculations done only require additions, subtractions, and sometimes multiplications which for computers are very fast and easy to compute. It doesn't have to mess around with finding the inverse square roots of vectors or anything nasty like that, it's all very straight forward in its method. It also only can be minimized in terms of how many calculations need to be done and how many times they need to be done. For example we don't have to render anything outside of the range of the camera and when we do we only have to render it once. Thus we can save on processing power until we need to render something. Another benefit is that calculations only need to be done once until either an object moves or the light source(s) move(s). Even as the camera moves around the world, the only calculations that change are where the objects need to be rasterized, other than that, the colors, shades, etc stay the same. 
+      
     </div>
 
 
